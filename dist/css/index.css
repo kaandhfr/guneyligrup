@@ -56,21 +56,24 @@ html {
     padding: 0.5rem 0;
 }
 
-.swiper-slide-active .blog .blog-image {
+.blogSwiper .swiper-slide-active .blog .blog-image {
     animation-name: fadeInDown;
     animation-duration: 0.75s;
 }
 
-.swiper-slide:not(.swiper-slide-active) .blog .blog-content {
+.blogSwiper .swiper-slide:not(.swiper-slide-active) .blog .blog-content {
     opacity: 0;
     visibility: hidden;
 }
 
-.swiper-slide-active .blog .blog-content {
+.blogSwiper .swiper-slide-active .blog .blog-content {
     animation-name: fadeInLeft;
     animation-duration: 0.75s;
     animation-delay: 0.75s;
-    animation-fill-mode: backwards;
+}
+
+.animate__animated {
+    animation-fill-mode: backwards !important;
 }
 
 /* MEDIA QUERY */

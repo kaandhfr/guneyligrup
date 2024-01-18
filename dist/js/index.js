@@ -1,6 +1,5 @@
-const swiper = new Swiper(".blogSwipoer", {
+const swiper = new Swiper(".blogSwiper", {
     fadeEffect: { crossFade: true },
-    loop: true,
     pagination: {
         el: ".swiper-pagination",
     },

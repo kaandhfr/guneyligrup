@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   mobileMenu();
+  isShow();
+  document.addEventListener("scroll", isShow);
 });
 
 const mobileMenu = () => {
@@ -13,7 +15,6 @@ const mobileMenu = () => {
 };
 
 const mobileMenuOpen = (event) => {
-    console.log(event);
     document.querySelector("#mobile-menu").classList.add("opened");
     document.querySelector(".mobile-menu-shadow").classList.remove("opacity-0", "invisible");
 }
@@ -28,3 +29,14 @@ const scrollFunc = (e) => {
     offsetDiff = e.dataset.offsety > 0 ? e.dataset.offsety : 0;
   window.scrollTo(0, offset - offsetDiff);
 };
+
+const isShow = () => {
+  const places = document.querySelectorAll("[data-is-show]");
+  if(places.length > 0)
+    places.forEach(element => {
+      let placeDiff = element.dataset.showingoffset ? parseInt(element.dataset.showingoffset) : 0;
+      if (window.innerHeight > (element.getBoundingClientRect().top + placeDiff)) {
+        element.classList.add(element.dataset.addclass);
+      }
+    });
+}
