@@ -16,6 +16,7 @@ module.exports = {
       'black': '#000000',
     },
     container: {
+      center: true,
       padding: '1rem',
       screens: {
         sm: '640px',

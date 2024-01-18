@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   mobileMenu();
   isShow();
   document.addEventListener("scroll", isShow);
+  Fancybox.bind()
 });
 
 const mobileMenu = () => {

@@ -552,6 +552,8 @@ video {
 
 .container{
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 1rem;
   padding-left: 1rem;
 }
@@ -855,6 +857,10 @@ video {
   row-gap: 2.5rem;
 }
 
+.overflow-auto{
+  overflow: auto;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -900,6 +906,10 @@ video {
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-opacity-15{
+  --tw-border-opacity: 0.15;
 }
 
 .border-opacity-25{
@@ -1043,6 +1053,10 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
 .pb-8{
   padding-bottom: 2rem;
 }
@@ -1151,6 +1165,11 @@ video {
   letter-spacing: 0.1em;
 }
 
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-gray{
   --tw-text-opacity: 1;
   color: rgb(61 90 128 / var(--tw-text-opacity));
@@ -1193,6 +1212,12 @@ video {
 
 .opacity-50{
   opacity: 0.5;
+}
+
+.shadow-md{
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .transition-all{
@@ -1263,6 +1288,12 @@ video {
   top: 0px;
 }
 
+.after\:mx-3::after{
+  content: var(--tw-content);
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .after\:ml-8::after{
   content: var(--tw-content);
   margin-left: 2rem;
@@ -1322,8 +1353,18 @@ video {
   content: var(--tw-content);
 }
 
+.after\:content-\[\'\/\'\]::after{
+  --tw-content: '/';
+  content: var(--tw-content);
+}
+
 .last\:ml-auto:last-child{
   margin-left: auto;
+}
+
+.last\:after\:content-none:last-child::after{
+  --tw-content: none;
+  content: var(--tw-content);
 }
 
 .hover\:bg-gray-dark:hover{
@@ -1424,6 +1465,10 @@ video {
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:px-12{

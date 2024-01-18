@@ -12,13 +12,15 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body class="font-montserrat">
-    <header id="header" class="w-full py-5">
-        <div class="container mx-auto">
+    <header id="header" class="w-full shadow-md py-5">
+        <div class="container">
             <div class="grid grid-cols-12 items-center gap-4">
                 <div class="col-span-8 lg:col-span-4 xl:col-span-5">
                     <div class="logo">
-                        <img class="white-logo" src="../src/images/logo-white.svg" width="220" height="40" alt="logo">
-                        <img class="colored-logo hidden" src="../src/images/logo.svg" width="220" height="40" alt="logo">
+                        <a href="index.html">
+                            <img class="white-logo hidden" src="../src/images/logo-white.svg" width="220" height="40" alt="logo">
+                            <img class="colored-logo" src="../src/images/logo.svg" width="220" height="40" alt="logo">
+                        </a>
                     </div>
                 </div>
                 <div class="col-span-4 lg:col-span-8 xl:col-span-7 lg:block flex justify-end">
@@ -31,7 +33,7 @@
                         </button>
                     </div>
                     <nav id="navigation-menu" class="lg:block hidden">
-                        <ul class="flex gap-8 flex-wrap text-sm font-semibold text-white">
+                        <ul class="flex gap-8 flex-wrap text-sm font-semibold text-gray">
                             <li class="last:ml-auto"><a href="#!" class="hover:underline">HOME</a></li>
                             <li class="last:ml-auto"><a href="#!" class="hover:underline">SOLUTIONS</a></li>
                             <li class="last:ml-auto"><a href="#!" class="hover:underline">PROCESS</a></li>
@@ -45,14 +47,14 @@
         </div>
     </header>
 
-    <main>
+    <main class="py-12">
         <section id="entry-hero-section" class="relative">
             <div class="entry-hero-image relative after:content-[''] after:bg-black after:bg-opacity-25 after:absolute after:top-0 after:left-0 after:w-full after:h-full">
                 <img src="../src/images/slider.jpg" class="w-full object-cover aspect-[16/7] min-h-[360px] md:min-h-[500px] lg:min-h-[600px]" width="1920" height="840" alt="">
             </div>
             <div class="entry-hero-inner flex lg:absolute bottom-2 left-0 w-full z-10">
                 <div class="flex-1 bg-orange"></div>
-                <div class="container mx-auto px-0">
+                <div class="container px-0">
                     <div class="grid grid-cols-12">
                         <div class="col-span-12 lg:col-span-5 overflow-hidden bg-orange lg:border-l border-b lg:border-b-0 border-white border-opacity-25 border-spacing-1 py-10 lg:pb-14 xl:pb-16 px-10">
                             <div class="ilk animate__animated" data-is-show="" data-showingoffset="20" data-addclass="animate__fadeInDown">
@@ -86,7 +88,7 @@
         </section>
 
         <section id="our-works" class="our-works animate__animated pt-12 pb-8 relative">
-            <div class="container mx-auto">
+            <div class="container">
                 <div class="text-3xl font-semibold text-center text-gray-dark mb-8">CASE STUDIES</div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 justify-center px-4 md:px-16 lg:mx-16 mb-12">
                     <div class="animate__animated" data-is-show="" data-showingoffset="40" data-addclass="animate__zoomIn">
@@ -105,7 +107,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="animate__animated" data-is-show="" data-showingoffset="40" data-addclass="animate__zoomIn">
+                    <div class="animate__animated" style="animation-delay: 0.5s;" data-is-show="" data-showingoffset="40" data-addclass="animate__zoomIn">
                         <a href="#!" class="works-item relative block">
                             <div class="works-item-image relative after:content-[''] after:bg-black after:bg-opacity-25 after:absolute after:top-0 after:left-0 after:w-full after:h-full">
                                 <img class="w-full aspect-[608/520] object-cover" src="../src/images/works-item-2.jpg" width="608" height="520" alt="our works">
@@ -194,10 +196,10 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="blog grid grid-cols-1 sm:grid-cols-2">
-                                    <div class="blog-image relative z-[1]">
+                                    <div class="blog-image animate__animated relative z-[1]">
                                         <img src="../src/images/portfolio-1.jpg" class="aspect-square sm:aspect-[400/600] lg:min-h-[750px] object-cover w-full" alt="">
                                     </div>
-                                    <div class="blog-content py-16 px-12 bg-gray">
+                                    <div class="blog-content animate__animated py-16 px-12 bg-gray">
                                         <a href="#!" class="min-h-[100%] flex flex-col justify-end">
                                             <div class="text-sm uppercase text-white text-opacity-50 font-medium mb-auto">SERVICES & BLOGS</div>
                                             <div class="text-4xl font-roboto-condensed font-light tracking-wider text-white mb-6">More Indistrual <br> Projects</div>
@@ -220,10 +222,10 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="blog grid grid-cols-1 sm:grid-cols-2">
-                                    <div class="blog-image relative z-[1]">
+                                    <div class="blog-image animate__animated relative z-[1]">
                                         <img src="../src/images/portfolio-1.jpg" class="aspect-square sm:aspect-[400/600] lg:min-h-[750px] object-cover w-full" alt="">
                                     </div>
-                                    <div class="blog-content py-16 px-12 bg-gray flex flex-col justify-end">
+                                    <div class="blog-content animate__animated py-16 px-12 bg-gray flex flex-col justify-end">
                                         <div class="text-sm uppercase text-white text-opacity-50 font-medium mb-auto">SERVICES & BLOGS</div>
                                         <div class="text-4xl font-roboto-condensed font-light tracking-wider text-white mb-6">More Indistrual <br> Projects</div>
                                         <div class="text-sm leading-[1.5] text-white text-opacity-75 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, maiores beatae optio ipsa, quo tenetur ex odio nihil laudantium, architecto illum pariatur eum perspiciatis asperiores magni libero odit eaque! Esse!</div>
@@ -246,10 +248,10 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="blog grid grid-cols-1 sm:grid-cols-2">
-                                    <div class="blog-image relative z-[1]">
+                                    <div class="blog-image animate__animated relative z-[1]">
                                         <img src="../src/images/portfolio-1.jpg" class="aspect-square sm:aspect-[400/600] lg:min-h-[750px] object-cover w-full" alt="">
                                     </div>
-                                    <div class="blog-content py-16 px-12 bg-gray flex flex-col justify-end">
+                                    <div class="blog-content animate__animated py-16 px-12 bg-gray flex flex-col justify-end">
                                         <div class="text-sm uppercase text-white text-opacity-50 font-medium mb-auto">SERVICES & BLOGS</div>
                                         <div class="text-4xl font-roboto-condensed font-light tracking-wider text-white mb-6">More Indistrual <br> Projects</div>
                                         <div class="text-sm leading-[1.5] text-white text-opacity-75 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, maiores beatae optio ipsa, quo tenetur ex odio nihil laudantium, architecto illum pariatur eum perspiciatis asperiores magni libero odit eaque! Esse!</div>
@@ -277,20 +279,22 @@
         </section>
 
         <section class="about-us py-16 before:content-[''] before:bg-black before:bg-opacity-30 before:absolute before:top-0 before:left-0 before:w-full before:h-full relative">
-            <div class="container mx-auto">
+            <div class="container">
                 <div class="about-us-box overflow-hidden relative bg-white grid grid-cols-1 lg:grid-cols-2 gap-x-12 mb-12">
                     <div class="about-us-image animate__animated" data-is-show="" data-showingoffset="50" data-addclass="animate__zoomIn">
                         <img src="../src/images/about-us.jpg" class="w-full" width="" alt="">
                     </div>
-                    <div class="about-us-content flex flex-col justify-center items-start py-8 lg:py-4 lg:pr-12 px-8 lg:pl-0 animate__animated" data-is-show="" data-showingoffset="50" data-addclass="animate__fadeInDown">
-                        <div class="logo mb-8">
-                            <img src="../src/images/logo.svg" width="130" height="24" alt="">
+                    <div class="about-us-content flex flex-col justify-center items-start py-8 lg:py-4 lg:pr-12 px-8 lg:pl-0">
+                        <div class="animate__animated" data-is-show="" data-showingoffset="50" data-addclass="animate__fadeInDown">
+                            <div class="logo mb-8">
+                                <img src="../src/images/logo.svg" width="130" height="24" alt="">
+                            </div>
+                            <div class="text-5xl font-roboto-condensed font-medium mb-4">ABOUT US</div>
+                            <div class="text-gray mb-4">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, reprehenderit temporibus. Tempore quam error vitae! Corrupti ducimus quis totam quos exercitationem itaque minus laboriosam error. Rerum consectetur alias id blanditiis.
+                            </div>
+                            <a href="#!" class="inline-flex items-center content-center bg-gray text-white rounded-sm text-sm font-roboto-condensed hover:bg-gray-dark transition-all py-2 px-4">LEARN MORE</a>
                         </div>
-                        <div class="text-5xl font-roboto-condensed font-medium mb-4">ABOUT US</div>
-                        <div class="text-gray mb-4">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, reprehenderit temporibus. Tempore quam error vitae! Corrupti ducimus quis totam quos exercitationem itaque minus laboriosam error. Rerum consectetur alias id blanditiis.
-                        </div>
-                        <a href="#!" class="inline-flex items-center content-center bg-gray text-white rounded-sm text-sm font-roboto-condensed hover:bg-gray-dark transition-all py-2 px-4">LEARN MORE</a>
                     </div>
                 </div>
                 <div class="about-us-counter-wrapper relative font-roboto-condensed text-white text-center grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -319,7 +323,7 @@
         </section>
 
         <section class="shopping-banner py-14 relative">
-            <div class="container mx-auto">
+            <div class="container">
                 <div class="grid grid-cols-12 justify-items-center">
                     <div class="col-span-12 md:col-span-10 xl:col-span-6 md:col-start-2 xl:col-start-4 text-white text-center animate__animated" data-is-show="" data-showingoffset="50" data-addclass="animate__zoomIn">
                         <div class="text-6xl lg:text-7xl font-semibold mb-4">Let's build something different</div>
@@ -332,7 +336,7 @@
     </main>
 
     <footer id="footer" class="bg-gray-dark text-white">
-        <div class="container mx-auto">
+        <div class="container">
             <div class="footer-row-1 grid grid-cols-2 lg:grid-cols-12 gap-y-10 gap-x-6 pt-[6rem] md:pt-[8rem] pb-[4rem]">
                 <div class="lg:col-span-5">
                     <div class="logo mb-12">

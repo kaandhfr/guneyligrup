@@ -8,6 +8,24 @@ html {
     left: 0;
     width: 100%;
     z-index: 100;
+    box-shadow: none !important;
+}
+
+#header .colored-logo {
+    display: none !important;
+}
+
+#header .white-logo {
+    display: block !important;
+}
+
+#navigation-menu > ul {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+main {
+    padding: 0 !important;
 }
 
 .works-item .works-item-button svg path {
