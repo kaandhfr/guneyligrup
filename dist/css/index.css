@@ -20,8 +20,11 @@ html {
 }
 
 #navigation-menu > ul {
-    --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.mobile-menu-button button svg path {
+    stroke: #ffffff;
 }
 
 main {
@@ -66,14 +69,6 @@ main {
     stroke: currentColor;
 }
 
-#mobile-menu.opened {
-    right: 0;
-}
-
-#mobile-menu-list li {
-    padding: 0.5rem 0;
-}
-
 .blogSwiper .swiper-slide-active .blog .blog-image {
     animation-name: fadeInDown;
     animation-duration: 0.75s;
@@ -98,17 +93,5 @@ main {
 @media (max-width: 1279px) {
     .shopping-banner {
         background-size: cover;
-    }
-}
-
-@media (max-width: 1023px) {
-    html {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 639px) {
-    html {
-        font-size: 12px;
     }
 }
