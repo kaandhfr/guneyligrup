@@ -31,6 +31,17 @@ main {
     padding: 0 !important;
 }
 
+#entry-hero-section .swiper-slide-active .entry-hero-left {
+    animation-duration: 1s;
+    animation-name: fadeInDown;
+}
+
+#entry-hero-section .swiper-slide-active .entry-hero-middle {
+    animation-duration: 1s;
+    animation-name: fadeInLeft;
+    animation-delay: 0.25s;
+}
+
 .works-item .works-item-button svg path {
     stroke: currentColor;
 }

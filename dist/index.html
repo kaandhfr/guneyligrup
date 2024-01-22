@@ -49,41 +49,83 @@
     </header>
 
     <main class="py-12">
-        <section id="entry-hero-section" class="relative">
-            <div class="entry-hero-image relative after:content-[''] after:bg-black after:bg-opacity-25 after:absolute after:top-0 after:left-0 after:w-full after:h-full">
-                <img src="../src/images/slider.jpg" class="w-full object-cover aspect-[16/7] min-h-[360px] md:min-h-[500px] lg:min-h-[600px]" width="1920" height="840" alt="">
-            </div>
-            <div class="entry-hero-inner flex lg:absolute bottom-2 left-0 w-full z-10">
-                <div class="flex-1 bg-orange"></div>
-                <div class="container px-0">
-                    <div class="grid grid-cols-12">
-                        <div class="col-span-12 lg:col-span-5 overflow-hidden bg-orange lg:border-l border-b lg:border-b-0 border-white border-opacity-25 border-spacing-1 py-10 lg:pb-14 xl:pb-16 px-10">
-                            <div class="ilk animate__animated" data-is-show="" data-showingoffset="20" data-addclass="animate__fadeInDown">
-                                <div class="text-xs font-medium text-white text-opacity-75 tracking-widest mb-3">EXPERTS SINCE 1997</div>
-                                <div class="text-white text-2xl font-semibold">
-                                    Lorem, ipsum dolor <br> sit amet consectetur adipisicing elit. <br> Itaque, neque facilis?
+        <section id="entry-hero-section" class="swiper relative">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="entry-hero-image relative after:content-[''] after:bg-black after:bg-opacity-25 after:absolute after:top-0 after:left-0 after:w-full after:h-full">
+                        <img src="../src/images/slider.jpg" class="w-full object-cover aspect-[16/7] min-h-[360px] md:min-h-[500px] lg:min-h-[600px]" width="1920" height="840" alt="">
+                    </div>
+                    <div class="entry-hero-inner flex lg:absolute bottom-2 left-0 w-full z-10">
+                        <div class="flex-1 bg-orange"></div>
+                        <div class="container px-0">
+                            <div class="grid grid-cols-12">
+                                <div class="col-span-12 lg:col-span-5 overflow-hidden bg-orange lg:border-l border-b lg:border-b-0 border-white border-opacity-25 border-spacing-1 py-10 lg:pb-14 xl:pb-16 px-10">
+                                    <div class="entry-hero-left animate__animated" data-is-show="" data-showingoffset="20" data-addclass="animate__fadeInDown">
+                                        <div class="text-xs font-medium text-white text-opacity-75 tracking-widest mb-3">EXPERTS SINCE 1997</div>
+                                        <div class="text-white text-2xl font-semibold">
+                                            Lorem, ipsum dolor <br> sit amet consectetur adipisicing elit. <br> Itaque, neque facilis?
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="col-span-12 lg:col-span-4 overflow-hidden flex items-center justify-center bg-orange lg:border-l border-b lg:border-b-0 border-white border-opacity-25 border-spacing-1 pl-10 pr-16 py-6">
+                                    <div class="entry-hero-middle animate__animated" data-is-show="" data-showingoffset="40" data-addclass="animate__fadeInLeft" style="animation-delay: 0.25s;">
+                                        <div class="sm:text-xs fon text-white text-opacity-75 tracking-widest xl:pr-14">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt deserunt, perferendis eligendi perspiciatis dolorem repellat fuga eaque nostrum. Est recusandae animi ipsam quae placeat
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#!" data-href="#our-works" onclick="scrollFunc(this)" class="col-span-12 lg:col-span-3 flex items-center justify-center bg-white border-l border-white border-opacity-25 border-spacing-1 text-orange sm:text-sm font-semibold py-8 sm:py-6">
+                                    <span>Scroll to discover</span>
+                                </a>
                             </div>
                         </div>
-                        <div class="col-span-12 lg:col-span-4 overflow-hidden flex items-center justify-center bg-orange lg:border-l border-b lg:border-b-0 border-white border-opacity-25 border-spacing-1 pl-10 pr-16 py-6">
-                            <div class="animate__animated" data-is-show="" data-showingoffset="40" data-addclass="animate__fadeInLeft" style="animation-delay: 0.25s;">
-                                <div class="sm:text-xs fon text-white text-opacity-75 tracking-widest xl:pr-14">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt deserunt, perferendis eligendi perspiciatis dolorem repellat fuga eaque nostrum. Est recusandae animi ipsam quae placeat
-                                </div>
-                            </div>
+                        <div class="flex-1 bg-orange lg:bg-opacity-0 flex justify-center items-center">
+                            <a href="#!" data-href="#our-works" onclick="scrollFunc(this)" class="hidden 2xl:block">
+                                <svg width="32" height="32" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 0.5L7 13.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.5 10L7 13.5L10.5 10" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
                         </div>
-                        <a href="#!" data-href="#our-works" onclick="scrollFunc(this)" class="col-span-12 lg:col-span-3 flex items-center justify-center bg-white border-l border-white border-opacity-25 border-spacing-1 text-orange sm:text-sm font-semibold py-8 sm:py-6">
-                            <span>Scroll to discover</span>
-                        </a>
                     </div>
                 </div>
-                <div class="flex-1 bg-orange lg:bg-opacity-0 flex justify-center items-center">
-                    <a href="#!" data-href="#our-works" onclick="scrollFunc(this)" class="hidden 2xl:block">
-                        <svg width="32" height="32" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 0.5L7 13.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M3.5 10L7 13.5L10.5 10" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
+                <div class="swiper-slide">
+                    <div class="entry-hero-image relative after:content-[''] after:bg-black after:bg-opacity-25 after:absolute after:top-0 after:left-0 after:w-full after:h-full">
+                        <img src="../src/images/slider.jpg" class="w-full object-cover aspect-[16/7] min-h-[360px] md:min-h-[500px] lg:min-h-[600px]" width="1920" height="840" alt="">
+                    </div>
+                    <div class="entry-hero-inner flex lg:absolute bottom-2 left-0 w-full z-10">
+                        <div class="flex-1 bg-orange"></div>
+                        <div class="container px-0">
+                            <div class="grid grid-cols-12">
+                                <div class="col-span-12 lg:col-span-5 overflow-hidden bg-orange lg:border-l border-b lg:border-b-0 border-white border-opacity-25 border-spacing-1 py-10 lg:pb-14 xl:pb-16 px-10">
+                                    <div class="entry-hero-left animate__animated" data-is-show="" data-showingoffset="20" data-addclass="animate__fadeInDown">
+                                        <div class="text-xs font-medium text-white text-opacity-75 tracking-widest mb-3">EXPERTS SINCE 1997</div>
+                                        <div class="text-white text-2xl font-semibold">
+                                            Lorem, ipsum dolor <br> sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 lg:col-span-4 overflow-hidden flex items-center justify-center bg-orange lg:border-l border-b lg:border-b-0 border-white border-opacity-25 border-spacing-1 pl-10 pr-16 py-6">
+                                    <div class="entry-hero-middle animate__animated" data-is-show="" data-showingoffset="40" data-addclass="animate__fadeInLeft" style="animation-delay: 0.25s;">
+                                        <div class="sm:text-xs fon text-white text-opacity-75 tracking-widest xl:pr-14">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt deserunt, perferendis eligendi perspiciatis dolorem repellat fuga eaque nostrum. Est recusandae animi ipsam quae placeat
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#!" data-href="#our-works" onclick="scrollFunc(this)" class="col-span-12 lg:col-span-3 flex items-center justify-center bg-white border-l border-white border-opacity-25 border-spacing-1 text-orange sm:text-sm font-semibold py-8 sm:py-6">
+                                    <span>Scroll to discover</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex-1 bg-orange lg:bg-opacity-0 flex justify-center items-center">
+                            <a href="#!" data-href="#our-works" onclick="scrollFunc(this)" class="hidden 2xl:block">
+                                <svg width="32" height="32" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 0.5L7 13.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.5 10L7 13.5L10.5 10" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
