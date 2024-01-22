@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   mobileMenu();
   isShow();
   document.addEventListener("scroll", isShow);
-  Fancybox.bind();
   accordion(".faq-accordion");
 });
 
@@ -44,13 +43,14 @@ const isShow = () => {
 }
 
 const accordion = (el) => {
-  document.querySelector(el).querySelectorAll(".accordion-item").forEach(element => {
-    let defHeight = element.querySelector(".accordion-content").style.height;
-    element.querySelector(".accordion-button").addEventListener("click", (event) => {
-      document.querySelector(el).querySelectorAll(".accordion-item").forEach((button) => {
-        button.classList.remove("active");
-      });
-      event.target.offsetParent.classList.add("active");
-    })
-  });
+  if (document.querySelector(el))
+    document.querySelector(el).querySelectorAll(".accordion-item").forEach(element => {
+      let defHeight = element.querySelector(".accordion-content").style.height;
+      element.querySelector(".accordion-button").addEventListener("click", (event) => {
+        document.querySelector(el).querySelectorAll(".accordion-item").forEach((button) => {
+          button.classList.remove("active");
+        });
+        event.target.offsetParent.classList.add("active");
+      })
+    });
 }
