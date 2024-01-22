@@ -1,8 +1,12 @@
 const heroSection = new Swiper("#entry-hero-section", {
     fadeEffect: { crossFade: true },
     autoplay: {
-        delay: 2500,
+        delay: 3500,
         disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".entry-hero-next",
+        prevEl: ".entry-hero-prev",
     },
     effect: "fade",
 });
